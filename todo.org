@@ -8,7 +8,8 @@
 - complex tiles :: pair<int, int> mapping coords to complex tiles
 - entities :: list of non tile entities (player, creature)
 **** render
-- calculate drawable bounds based on player location (screen size / (tilesize * scale) + like 2 tiles on each side?)
+- calculate drawable bounds based on player location (screen size / (tilesize * scale) + like 2 tiles on each side?))
+- calculate lighting
 - draw basic tiles bg tex
 - draw complex tiles
 - draw entities
@@ -31,4 +32,27 @@
 - any exposeable methods (IMagicSource, IMagicSink, IContainer)
 **** render
 - calculate texture (active/inactive, any internal state really)
-- 
+
+*** Entity
+
+** Storage
+*** Static/Game Data
+- directory with tile types
+- entities
+**** Structure
+#+BEGIN_SRC
+consts.conf    (TODO: use .hpp with consts instead?)
+tiles/         (automatically indexed)
+  name/        (simple/complex alike, comp can have extra files as needed)
+    name.tile  (plaintext)
+    name.png   (texture)
+entities/      (accessed from entity classes)
+  name/        (structure varies as needed)
+    name.entity
+    cfg.txt
+    name1.png
+    name2.png
+    
+#+END_SRC
+
+*** Dynamic/Save Data
