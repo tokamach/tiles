@@ -1,0 +1,34 @@
+* Tile Engine
+- A 2d tile based game engine
+
+** Logical Structures
+*** Scene
+**** Properties
+- basic tiles :: 2d integer array of basic tiles (enum)
+- complex tiles :: pair<int, int> mapping coords to complex tiles
+- entities :: list of non tile entities (player, creature)
+**** render
+- calculate drawable bounds based on player location (screen size / (tilesize * scale) + like 2 tiles on each side?)
+- draw basic tiles bg tex
+- draw complex tiles
+- draw entities
+**** update
+- iterate and update each complex tile
+- iterate and update each entity
+
+*** Basic Tile
+- implemented via lookup arrays on enum
+**** Properties
+- name, texture, sound
+**** update
+- n/a
+
+*** Complex Tile
+- class with update/render, i.e. IDrawable
+**** Properties
+- name, texture, sound
+- any relevant internal data
+- any exposeable methods (IMagicSource, IMagicSink, IContainer)
+**** render
+- calculate texture (active/inactive, any internal state really)
+- 
