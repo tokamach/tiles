@@ -35,6 +35,7 @@
 
 *** Entity
 
+
 ** Storage
 *** Static/Game Data
 - directory with tile types

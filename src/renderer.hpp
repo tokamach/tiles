@@ -8,5 +8,5 @@
 //utility class which handles drawing game to sfml window
 class Renderer
 {
-    std::vector<Draweable> objects;
+    
 };
