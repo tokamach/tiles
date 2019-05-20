@@ -3,7 +3,7 @@
 #include "scene.hpp"
 #include "tile.hpp"
 
-Scene::Scene(int _x_size, int _y_size) : tiles(_x_size, std::vector<Tile>(_y_size)), entities()
+Scene::Scene(int _x_size, int _y_size) : tiles(_x_size, std::vector<Tile>(_y_size))
 {
     //TODO: load from disk
     this->x_size = _x_size;
