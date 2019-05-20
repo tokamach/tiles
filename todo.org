@@ -34,7 +34,12 @@
 - calculate texture (active/inactive, any internal state really)
 
 *** Entity
-
+**** Properties
+- x and y coords
+- any further internal implementation specific properties
+*** Renderer
+- ADAPTER PATTERN BITCH
+- adapts the Scene class to SFML, by drawing a scene to a RenderWindow
 
 ** Storage
 *** Static/Game Data
