@@ -9,10 +9,13 @@
 class Scene
 {
 public:
-    Scene();
+    Scene(int _x_size, int _y_size);
     void update();
-    void render();
+    void print();
 private:
+    int x_size, y_size;
     std::vector<std::vector<Tile> > tiles;
-    std::forward_list<Entity> entities;
+    std::forward_list<Entity>       entities;
+
+    void generateTestWorld();
 };

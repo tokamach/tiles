@@ -4,9 +4,9 @@
 #include "tile.hpp"
 
 
-Game::Game(int x, int y) : win(sf::VideoMode(x, y), "Tiles", sf::Style::Resize)
+Game::Game(int x, int y) : win(sf::VideoMode(x, y), "Tiles", sf::Style::Resize), scene(x, y)
 {
-    scene = Scene();
+    //scene = Scene(30, 30);
 }
 
 int Game::start()
@@ -31,7 +31,7 @@ int Game::start()
 		break;
 	    
 	    default:
-		std::cout << "Unhandled Event: " << ev.type << "\n";
+		//std::cout << "Unhandled Event: " << ev.type << "\n";
 		break;
 	    }
 	}

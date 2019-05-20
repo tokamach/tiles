@@ -1,5 +1,7 @@
 all:
 	c++			\
+	src/scene.cpp		\
+	src/renderer.cpp	\
 	src/game.cpp		\
 	src/main.cpp	      	\
 	-I src		      	\
@@ -8,6 +10,8 @@ all:
 	-L /usr/local/lib     	\
 	-l sfml-system        	\
 	-l sfml-window        	\
-	-l sfml-graphics
+	-l sfml-graphics	\
+	-g			\
+	-std=c++17
 
 .PHONY: all
