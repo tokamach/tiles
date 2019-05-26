@@ -9,7 +9,7 @@
 class Game
 {
 public:
-    Game(int x, int y);
+    Game(int win_x, int win_y, int scn_x, int scn_y);
     int start(); //returns error code
 
 private:

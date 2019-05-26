@@ -6,7 +6,7 @@
 
 int main(int argc, char **argv)
 {
-    Game game(800, 600);
+    Game game(1920, 1080, 30, 30);
     game.start();
     return 0;
 }
