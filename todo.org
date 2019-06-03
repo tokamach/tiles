@@ -2,38 +2,36 @@
 - A 2d tile based game engine
 
 ** Logical Structures
-*** Scene
-**** Properties
+*** TODO Scene
+**** TODO Properties
 - basic tiles :: 2d integer array of basic tiles (enum)
 - complex tiles :: pair<int, int> mapping coords to complex tiles
 - entities :: list of non tile entities (player, creature)
-**** render
+**** TODO render
 - calculate drawable bounds based on player location (screen size / (tilesize * scale) + like 2 tiles on each side?))
 - calculate lighting
 - draw basic tiles bg tex
 - draw complex tiles
 - draw entities
-**** update
+**** TODO update
 - iterate and update each complex tile
 - iterate and update each entity
 
-*** Basic Tile
+*** TODO Basic Tile
 - implemented via lookup arrays on enum
-**** Properties
+**** TODO Properties
 - name, texture, sound
-**** update
+**** DONE update
 - n/a
-
-*** Complex Tile
+*** TODO Complex Tile
 - class with update/render, i.e. IDrawable
-**** Properties
+**** TODO Properties
 - name, texture, sound
 - any relevant internal data
 - any exposeable methods (IMagicSource, IMagicSink, IContainer)
-**** render
+**** TODO render
 - calculate texture (active/inactive, any internal state really)
-
-*** Entity
+*** TODO Entity
 **** Properties
 - x and y coords
 - any further internal implementation specific properties
@@ -41,7 +39,7 @@
 - ADAPTER PATTERN BITCH
 - adapts the Scene class to SFML, by drawing a scene to a RenderWindow
 
-** Storage
+** TODO Storage
 *** Static/Game Data
 - directory with tile types
 - entities
